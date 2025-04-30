@@ -1,18 +1,12 @@
-# Salesforce DX Project: Next Steps
+# Wanderlust Travel
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+A modern and responsive UI kit designed to streamline the development of travel and exploration-themed web applications.
 
-## How Do You Plan to Deploy Your Changes?
+✨ Features
+1️⃣ Find your best Destination — Discover amazing places to visit! 
+2️⃣ Book Destinations — Ready to plan your journey? Let’s get started! 
+3️⃣ Check Ticket Details — View your booking and ticket information. 
+4️⃣ Create a Case — Need assistance? Open a support case easily. 
+5️⃣ Check Case Status — Track the progress of your support request. 
+6️⃣ Transfer to Human Agent — Talk to a real person for personalized help.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
