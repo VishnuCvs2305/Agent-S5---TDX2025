@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>7mZmLIo07aec8N+c4LRLZxObwcLfgDT3GDgQZs+h++s=_1</activeVersionIdentifier>
+    <developerName>Find_Best_Destination</developerName>
+    <masterLabel>Find Best Destination</masterLabel>
+    <templateVersions>
+        <content>Generate optimal travel destination based on:
+1. Budget: {!$Input:Budget} (e.g., $500, $2000, $5000)
+2. Available trip duration: {!$Input:Trip_Duration} (e.g., weekend, 5 days, 2 weeks)
+3. Preferred environment: {!$Input:Environment} (e.g., mountains, beach, city, desert)
+ 
+Analyze destinations that:
+- Fit completely within the specified budget (including accommodation, food, activities)
+- Maximize experience quality for the available time
+- Match the desired environment type
+- Consider current seasonal factors for optimal experience
+- Evaluate safety conditions for travelers
+ 
+Response format must be exactly:
+&quot;Recommended destination: [DESTINATION]
+Estimated cost: [COST RANGE]
+Ideal visit duration: [DAYS]
+Best time to visit: [SEASON/MONTHS]
+Safety rating: [HIGH/MEDIUM/LOW]
+Top 3 attractions: [ATTRACTION 1], [ATTRACTION 2], [ATTRACTION 3]
+Recommended hotels: [HOTEL 1], [HOTEL 2], [HOTEL 3]
+Must-try local foods: [FOOD 1], [FOOD 2], [FOOD 3]&quot;
+ 
+No additional explanations, alternatives, or commentary should be included.
+</content>
+        <inputs>
+            <apiName>Budget</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Budget</masterLabel>
+            <referenceName>Input:Budget</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Trip_Duration</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Trip Duration</masterLabel>
+            <referenceName>Input:Trip_Duration</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Environment</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Environment</masterLabel>
+            <referenceName>Input:Environment</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>7mZmLIo07aec8N+c4LRLZxObwcLfgDT3GDgQZs+h++s=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

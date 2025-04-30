@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Handles user requests related to cancelling a booking using their booking number. Classify this topic when users inquire about cancelling their bookings.</description>
+    <developerName>Booking_Cancellation</developerName>
+    <genAiFunctions>
+        <functionName>Cancel_Voyage_Booking</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Confirm the cancellation with the user before finalizing the process.</description>
+        <developerName>instruction_confirmthe0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_confirmthe0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the booking number is not valid, inform the user and ask for a correct number.</description>
+        <developerName>instruction_ifthebooki1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifthebooki1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user provides a booking number, verify its validity before proceeding with the cancellation.</description>
+        <developerName>instruction_iftheuserp2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheuserp2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide a confirmation message once the booking has been successfully cancelled.</description>
+        <developerName>instruction_provideaco3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_provideaco3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Booking Cancellation</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to assist users in cancelling their bookings by verifying their booking number and processing the cancellation.</scope>
+</GenAiPlugin>

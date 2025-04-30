@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>7mZmLIo07aec8N+c4LRLZxObwcLfgDT3GDgQZs+h++s=_4</activeVersionIdentifier>
+    <developerName>Analyze_Crowd_Level</developerName>
+    <masterLabel>Analyze Crowd Level</masterLabel>
+    <templateVersions>
+        <content>Analyze crowd levels for {!$Input:Destination} during {!$Input:Time_Period}.
+ 
+Using available social media data, event calendars, and seasonal tourism patterns:
+ 1. Evaluate expected crowd density
+ 2. Consider local events, holidays, and peak tourism factors
+ 3. Provide ONLY a crowd level indicator: RED (extremely crowded), YELLOW (moderately crowded), or GREEN (manageable crowds)
+ 
+Response format must be exactly: &quot;[DESTINATION] during [TIME PERIOD]: [COLOR] crowd level&quot;
+ 
+No additional explanations, data sources, or commentary should be included.
+</content>
+        <inputs>
+            <apiName>Destination</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Destination</masterLabel>
+            <referenceName>Input:Destination</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Time_Period</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Time Period</masterLabel>
+            <referenceName>Input:Time_Period</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>7mZmLIo07aec8N+c4LRLZxObwcLfgDT3GDgQZs+h++s=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Analyze crowd levels for {!$Input:Destination} during {!$Input:Time_Period}.
+ 
+Using available social media data, event calendars, and seasonal tourism patterns:
+1. Evaluate expected crowd density
+2. Consider local events, holidays, and peak tourism factors
+3. Provide a crowd level indicator:
+   a.🔴 Extremely Crouded (extremely crowded),
+   b.🟡 Moderately Crowded (moderately crowded), or
+   c.🟢 Manageable Crowds (manageable crowds)
+4. Identify the best time to visit with minimal crowds
+ 
+Response format must be exactly:
+&quot;[DESTINATION] during [TIME PERIOD]: [CROWD-LEVEL-INDICATOR]
+Best time to visit for lower crowds: [ALTERNATIVE TIME PERIOD]&quot;
+ 
+No additional explanations, data sources, or commentary should be included
+</content>
+        <inputs>
+            <apiName>Destination</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Destination</masterLabel>
+            <referenceName>Input:Destination</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Time_Period</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Time Period</masterLabel>
+            <referenceName>Input:Time_Period</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>7mZmLIo07aec8N+c4LRLZxObwcLfgDT3GDgQZs+h++s=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Analyze crowd levels for {!$Input:Destination} during {!$Input:Time_Period}.
+ 
+Using available social media data, event calendars, and seasonal tourism patterns:
+1. Evaluate expected crowd density
+2. Consider local events, holidays, and peak tourism factors
+3. Provide a crowd level indicator:
+   a.🔴 Extremely Crowded (extremely crowded),
+   b.🟡 Moderately Crowded (moderately crowded), or
+   c.🟢 Manageable Crowd (manageable crowd)
+4. Identify the best time to visit with minimal crowds
+ 
+Response format must be exactly:
+&quot;[DESTINATION] during [TIME PERIOD]: [CROWD-LEVEL-INDICATOR]
+Best time to visit for less crowd: [ALTERNATIVE TIME PERIOD]&quot;
+ 
+No additional explanations, data sources, or commentary should be included
+</content>
+        <inputs>
+            <apiName>Time_Period</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Time Period</masterLabel>
+            <referenceName>Input:Time_Period</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Destination</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Destination</masterLabel>
+            <referenceName>Input:Destination</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>7mZmLIo07aec8N+c4LRLZxObwcLfgDT3GDgQZs+h++s=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Analyze crowd levels for {!$Input:Destination} during {!$Input:Time_Period}.
+ 
+Using available social media data, event calendars, and seasonal tourism patterns:
+1. Evaluate expected crowd density
+2. Consider local events, holidays, and peak tourism factors
+3. Provide a crowd level indicator:
+   a.🔴 Extremely Crowded (extremely crowded),
+   b.🟡 Moderately Crowded (moderately crowded), or
+   c.🟢 Manageable Crowd (manageable crowd)
+4. Identify the best time to visit with minimal crowds
+ 
+Response format must be exactly:
+&quot;[DESTINATION] during [TIME PERIOD]: [CROWD-LEVEL-INDICATOR]
+Best time to visit considering normal crowd: [ALTERNATIVE TIME PERIOD]&quot;
+ 
+No additional explanations, data sources, or commentary should be included
+</content>
+        <inputs>
+            <apiName>Destination</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Destination</masterLabel>
+            <referenceName>Input:Destination</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Time_Period</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Time Period</masterLabel>
+            <referenceName>Input:Time_Period</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>7mZmLIo07aec8N+c4LRLZxObwcLfgDT3GDgQZs+h++s=_4</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic handles creating new cases or updating existing ones based on user requests. It is triggered when users need assistance with case management.</description>
+    <developerName>Case_Management</developerName>
+    <genAiFunctions>
+        <functionName>Check_Case_Status</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Create_New_Case</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Gather as much information as possible from the user by asking clarifying questions.</description>
+        <developerName>instruction_gatherasmu0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_gatherasmu0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user does not have their case number or email, ask if they&apos;d like to escalate to an agent or create a new case.</description>
+        <developerName>instruction_ifauserdoe1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifauserdoe1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If user types 4 or 4️⃣ or Create a Case</description>
+        <developerName>instruction_ifusertype2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifusertype2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Offer both options to look up a case by either email address or case number.</description>
+        <developerName>instruction_offerbotho3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_offerbotho3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Case Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to create new cases or update existing ones based on user input. Do not attempt to handle any other types of requests.</scope>
+</GenAiPlugin>

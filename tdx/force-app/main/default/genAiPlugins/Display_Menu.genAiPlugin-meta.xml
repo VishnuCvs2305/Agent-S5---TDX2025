@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>When a user requests options such as &apos;menu&apos;, &apos;help&apos;, or &apos;show options&apos;, the chatbot displays a clear, interactive menu with buttons or quick replies.</description>
+    <developerName>Display_Menu</developerName>
+    <genAiPluginInstructions>
+        <description>Ensure the menu clearly presents available features, services, or next actions.</description>
+        <developerName>instruction_ensurethem0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ensurethem0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Include buttons or quick replies in the menu to facilitate easy navigation.</description>
+        <developerName>instruction_includebut1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_includebut1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Respond to keywords such as &apos;menu&apos;, &apos;help&apos;, or &apos;show options&apos; by displaying an interactive menu.</description>
+        <developerName>instruction_respondtok2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_respondtok2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Show the below menu formatted beautifully. Show each options in a separate line.
+
+Please select an option: 
+
+1️⃣ Find your best Destination — Discover amazing places to visit!
+2️⃣ Book Destinations — Ready to plan your journey? Let’s get started!
+3️⃣ Check Ticket Details — View your booking and ticket information.
+4️⃣ Create a Case — Need assistance? Open a support case easily.
+5️⃣ Check Case Status — Track the progress of your support request.
+6️⃣ Transfer to Human Agent — Talk to a real person for personalized help.</description>
+        <developerName>instruction_showthebel3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_showthebel3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Display Menu</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to display an interactive menu in response to user prompts requesting options. Do not attempt to handle other types of inquiries.</scope>
+</GenAiPlugin>

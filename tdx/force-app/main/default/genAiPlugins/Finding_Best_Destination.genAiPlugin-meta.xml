@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Assist users in identifying and selecting the most suitable destination based on their preferences and requirements.</description>
+    <developerName>Finding_Best_Destination</developerName>
+    <genAiFunctions>
+        <functionName>Find_Best_Destination</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Ask the user about their preferences such as climate, activities, budget, and travel dates.</description>
+        <developerName>instruction_asktheuser0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_asktheuser0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user is unsure, ask clarifying questions to better understand their needs.</description>
+        <developerName>instruction_iftheuseri1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuseri1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Offer detailed information about each suggested destination, including attractions, accommodations, and travel tips.</description>
+        <developerName>instruction_offerdetai2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_offerdetai2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Once the user selects a destination, provide additional resources or assistance as needed.</description>
+        <developerName>instruction_oncetheuse3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_oncetheuse3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide suggestions based on the user&apos;s preferences and requirements.</description>
+        <developerName>instruction_providesug4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_providesug4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Finding Best Destination</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to help users find their best destination by asking relevant questions about their preferences, suggesting options based on their responses, and providing detailed information about the suggested destinations.</scope>
+</GenAiPlugin>

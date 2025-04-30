@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Handles scenarios where the user request does not match any predefined topics or when the AI is unable to understand the user&apos;s input.</description>
+    <developerName>Fallback_Dialog</developerName>
+    <genAiPluginInstructions>
+        <description>If the user&apos;s input is unclear, ask for more information or clarification.</description>
+        <developerName>instruction_iftheusers0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheusers0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user request cannot be classified into any other topic, acknowledge the difficulty and offer to escalate the issue to a human agent.</description>
+        <developerName>instruction_iftheuserr1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheuserr1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When in doubt, provide a general response that can guide the user towards more specific information or assistance.</description>
+        <developerName>instruction_whenindoub2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_whenindoub2</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Fallback Dialog</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to address user queries that do not fit into any other specific topic and provide a generalized response or escalate to a human agent if needed.</scope>
+</GenAiPlugin>

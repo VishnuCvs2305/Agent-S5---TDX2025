@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic focuses on obtaining contact information from the user regardless of the initial query.</description>
+    <developerName>Contact_Information</developerName>
+    <genAiFunctions>
+        <functionName>Create_Contact</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If a user does not provide their contact information, ask for their first name, last name, email address and phone number mandatory.</description>
+        <developerName>instruction_ifauserdoe0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifauserdoe0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Gather as much contact information as possible by asking clarifying questions.</description>
+        <developerName>instruction_gatherasmu1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_gatherasmu1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Offer options to provide contact information either through email address or phone number.</description>
+        <developerName>instruction_offeroptio2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_offeroptio2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When collecting contact information, confirm the details with the user to ensure accuracy.</description>
+        <developerName>instruction_whencollec3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_whencollec3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Contact Information</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to collect contact information from the user. Do not attempt to address other inquiries.</scope>
+</GenAiPlugin>

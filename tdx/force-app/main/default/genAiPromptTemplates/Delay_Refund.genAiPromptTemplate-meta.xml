@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>7mZmLIo07aec8N+c4LRLZxObwcLfgDT3GDgQZs+h++s=_1</activeVersionIdentifier>
+    <developerName>Delay_Refund</developerName>
+    <masterLabel>Delay Refund</masterLabel>
+    <templateVersions>
+        <content>Detect the refund percent based on the delayed minutes from here {!$Input:Delayed_Minutes.Delay_Duration_Minutes__c}, check only this for finding the refund percent {!$EinsteinSearch:File_Delay_Refund_Policy_1Cx_Mtx3f77e697.results}
+
+&quot;&quot;&quot; If delay mins {!$Input:Delayed_Minutes.Delay_Duration_Minutes__c} is 0 or less than 0 then give response as 0%&quot;&quot;&quot;
+&quot;&quot;&quot;Give only the percent as a response.&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>Delayed_Minutes</apiName>
+            <definition>SOBJECT://TravelOffering__c</definition>
+            <masterLabel>Delayed Minutes</masterLabel>
+            <referenceName>Input:Delayed_Minutes</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Delay_Refund_Policy_1Cx_Mtx3f77e697</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Delayed_Minutes.Delay_Duration_Minutes__c}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Delay_Refund_Policy_1Cx_Mtx3f77e697</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>7mZmLIo07aec8N+c4LRLZxObwcLfgDT3GDgQZs+h++s=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

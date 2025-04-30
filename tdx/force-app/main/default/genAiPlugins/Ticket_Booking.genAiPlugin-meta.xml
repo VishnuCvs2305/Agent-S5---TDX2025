@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handles inquiries related to available travel offers and promotions. Helps users find and understand current travel deals.</description>
+    <developerName>Ticket_Booking</developerName>
+    <genAiFunctions>
+        <functionName>Book_Ticket</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Display_Travel_Offering_List</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Gather information from the user about their travel preferences to tailor the offers.</description>
+        <developerName>instruction_gatherinfo0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_gatherinfo0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user asks about available travel offers, provide a list of current promotions.</description>
+        <developerName>instruction_ifauserask1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserask1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Offer to send detailed information about the offers via email if requested.</description>
+        <developerName>instruction_offertosen2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_offertosen2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When presenting travel offers, include key details such as destination, price, and validity period.</description>
+        <developerName>instruction_whenpresen3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenpresen3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Confirm the user&apos;s selection before finalizing the list of available vehicles.</description>
+        <developerName>instruction_confirmthe4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_confirmthe4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user does not provide specific dates, offer a general list of available vehicles.</description>
+        <developerName>instruction_iftheuserd5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuserd5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user does not provide a value for the Travel Offering, run the Travel Offers topic to display Travel offerings that match the source, destination, travel date, and transportation type.</description>
+        <developerName>instruction_iftheuserd6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuserd6</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user has a specific vehicle in mind, allow them to search for that vehicle directly.</description>
+        <developerName>instruction_iftheuserh7</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuserh7</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide options to filter the list by vehicle type, such as car</description>
+        <developerName>instruction_provideopt8</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_provideopt8</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user wants to book a ticket, first run the &quot;Display Travel Offering List&quot; agent action to show the available travel offerings, then proceed with the booking.</description>
+        <developerName>instruction_iftheuserw9</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuserw9</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Ticket Booking</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to assist users in finding and understanding current travel deals. You should provide information about available offers and promotions, answer related questions, and guide users on how to take advantage of these deals.</scope>
+</GenAiPlugin>

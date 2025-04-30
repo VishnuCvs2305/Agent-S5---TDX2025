@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic handles the analysis of crowd data at various destinations. It classifies user requests related to assessing crowd levels and patterns at specified locations.</description>
+    <developerName>Destination_Crowd_Analysis</developerName>
+    <genAiFunctions>
+        <functionName>Analyze_Crowd_Level</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Gather additional details from the user if the destination information is incomplete or unclear.</description>
+        <developerName>instruction_gatheraddi0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_gatheraddi0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user provides a destination name, retrieve and analyze the crowd data for that location.</description>
+        <developerName>instruction_ifauserpro1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserpro1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the requested destination data is unavailable, inform the user and suggest alternative nearby locations for analysis.</description>
+        <developerName>instruction_ifthereque2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifthereque2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When presenting crowd analysis, include relevant statistics such as peak times, average crowd size, and any notable patterns.</description>
+        <developerName>instruction_whenpresen3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenpresen3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Destination Crowd Analysis</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to analyze and provide insights on crowd data at different destinations based on user queries. Do not attempt to perform tasks outside of crowd data analysis.</scope>
+</GenAiPlugin>
