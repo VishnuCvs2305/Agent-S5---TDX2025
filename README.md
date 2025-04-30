@@ -8,8 +8,7 @@ A modern and responsive UI kit designed to streamline the development of travel 
 
 Live project link - [https://comfy-blini-ec956d.netlify.app/](https://comfy-blini-ec956d.netlify.app/)
 
-PPT Link - [https://docs.google.com/presentation/d/1ja8pXS379EVDmFc_h48fLp13nKbaV_pC/edit?pli=1#slide=id.p1](https://docs.google.com/presentation/d/1ja8pXS379EVDmFc_h48fLp13nKbaV_pC/edit?pli=1#slide=id.p1)
-
+Video & PPT - [https://drive.google.com/drive/u/0/folders/1T1ZSA1APPb9ntKQEraasxrISNMR0ICfv](https://drive.google.com/drive/u/0/folders/1T1ZSA1APPb9ntKQEraasxrISNMR0ICfv)
 
 ## ✨ Features
 
