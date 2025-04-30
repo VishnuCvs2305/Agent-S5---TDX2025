@@ -2,7 +2,14 @@
 
 A modern and responsive UI kit designed to streamline the development of travel and exploration-themed web applications.
 
+<img width="1680" alt="Screenshot 2025-04-30 at 6 39 06 PM" src="https://github.com/user-attachments/assets/5548b3af-1d68-4a98-8146-e820e665bf31" />
+
+<br>
+
 Live project link - [https://comfy-blini-ec956d.netlify.app/](https://comfy-blini-ec956d.netlify.app/)
+
+PPT Link - [https://docs.google.com/presentation/d/1ja8pXS379EVDmFc_h48fLp13nKbaV_pC/edit?pli=1#slide=id.p1](https://docs.google.com/presentation/d/1ja8pXS379EVDmFc_h48fLp13nKbaV_pC/edit?pli=1#slide=id.p1)
+
 
 ## ✨ Features
 
